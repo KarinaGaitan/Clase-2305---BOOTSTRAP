@@ -27,11 +27,11 @@
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <!--md es para modo escritorio-->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Atenciones personalizadas">Atenciones
-                                personalizadas</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="#Tratamientos Odontológicos">Tratamientos Odontológicos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#Doctores">Doctores</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -106,19 +106,21 @@
                 </div>
             </div>
         </section>
-        <section class="py-5" id="Atenciones personalizadas">
+        <section class="py-5" id="Tratamientos Odontológicos">
             <div class="container d-flex flex-column gap-4">
-                <h2 class="text-center">Atenciones personalizadas</h2>
+                <h2 class="text-center">Tratamientos Odontológicos</h2>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm h-100">
+                            <!--h-100 es para que todas las tajetas tengan misma altura cn otro que tenga mucha letra-->
                             <img src="./Mi proyecto 854_480.jpg" alt="Tratamiento Odontológico" class="card-img-top"
                                 style="width: 100%; height: 256px" class="d-block object-fit-cover" />
-                            <div class="card-body" style= "height: 200px;">
+                            <div class="card-body d-flex flex-column" style="height: 200px;">
                                 <!--las class son fijas en todas las card, siempre google exije width y height-->
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <!--Se pone mt-auto con d-flex y flex-column es para que el espacio debajo de los botones desaparezca-->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
@@ -129,11 +131,15 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm h-100">
                             <img src="./ortodoncia 854_480.jpg" alt="ortodoncia" class="card-img-top"
                                 style="width: 100%; height: 256px" class="d-block object-fit-cover" />
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.This is a wider
+                                    card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.This is a wider
+                                    card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
@@ -146,7 +152,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm h-100">
                             <img src="./Infantil 854_480.jpg" alt="Odontopediatra" class="card-img-top"
                                 style="width: 100%; height: 256px" class="d-block object-fit-cover" />
                             <div class="card-body">
@@ -162,6 +168,26 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5" id="Doctores">
+            <div class="container">
+                <h2 class="text-center">Doctores Especialistas</h2>
+                <!--Si quiero ponerlo en color después del text-center poner text-primary o text-info para que sea medio turqueza-->
+                <div class="row">
+                    <!--Bootstrap acepta máximo 12 columnas, se pone md para hacerlo responsive-->
+                    <div class="col md 8">
+                        <h3>Dr. Rafael Gaitán</h3>
+                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
+                            Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un
+                            impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
+                            textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
+                    </div>
+                <div class="col-md-4">
+                    <img src="https://th.bing.com/th/id/R.a26c02b3b58d09ad0412779f530d0b5d?rik=%2bjswqwpmX3Dl1w&pid=ImgRaw&r=0" alt="Dr. Rafael Gaitán" width="100%"
+                        height="256" class="w-100 object-fit-cover" />
+                </div>
                 </div>
             </div>
         </section>

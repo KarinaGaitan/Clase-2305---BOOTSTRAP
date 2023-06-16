@@ -36,15 +36,14 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown
+                                Contáctanos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#Contáctanos">Ubicación</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#Contáctanos">Agenda tu Cita</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -172,23 +171,55 @@
             </div>
         </section>
         <section class="py-5" id="Doctores">
-            <div class="container">
+            <div class="container d-flex flex-column gap-4">
+                <!--Para poner gap se debe poner estas clases. Con sólo d-flex se pone uno al costado del otro y para corregirlo poner flex-column para que sea vertical-->
                 <h2 class="text-center">Doctores Especialistas</h2>
                 <!--Si quiero ponerlo en color después del text-center poner text-primary o text-info para que sea medio turqueza-->
-                <div class="row">
+                <div class="d-flex flex-column gap-3">
+                    <div class="row">
                     <!--Bootstrap acepta máximo 12 columnas, se pone md para hacerlo responsive-->
-                    <div class="col md 8">
-                        <h3>Dr. Rafael Gaitán</h3>
-                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
-                            Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un
-                            impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
-                            textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
+                        <div class="col-md-8 d-flex flex-column justify-content-center">
+                            <h3>Dr. Rafael Gaitán</h3>
+                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
+                                Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un
+                                impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
+                                textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
                     </div>
-                <div class="col-md-4">
-                    <img src="https://th.bing.com/th/id/R.a26c02b3b58d09ad0412779f530d0b5d?rik=%2bjswqwpmX3Dl1w&pid=ImgRaw&r=0" alt="Dr. Rafael Gaitán" width="100%"
-                        height="256" class="w-100 object-fit-cover" />
+                    <div class="col-md-4">
+                        <img src="https://th.bing.com/th/id/R.a26c02b3b58d09ad0412779f530d0b5d?rik=%2bjswqwpmX3Dl1w&pid=ImgRaw&r=0"
+                            alt="Dr. Rafael Gaitán" width="100%" height="256"
+                            class="img-fluid object-fit-cover border rounded" />
+                    </div>
+                    </div>
                 </div>
+            </div>
+        </br>
+        </br>
+            <div class="container d-flex flex-column gap-4">
+                <!--Si quiero ponerlo en color después del text-center poner text-primary o text-info para que sea medio turqueza-->
+                <div class="d-flex flex-column gap-3">
+                    <div class="row">
+                    <!--Bootstrap acepta máximo 12 columnas, se pone md para hacerlo responsive-->
+                        <div class="col-md-8 d-flex flex-column justify-content-center">
+                            <h3>Dr. Rafael Gaitán</h3>
+                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
+                                Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un
+                                impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
+                                textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://th.bing.com/th/id/R.a26c02b3b58d09ad0412779f530d0b5d?rik=%2bjswqwpmX3Dl1w&pid=ImgRaw&r=0"
+                            alt="Dr. Rafael Gaitán" width="100%" height="256"
+                            class="img-fluid object-fit-cover border rounded" />
+                    </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section class="py-5" id="Contáctanos">
+            <div class="container">
+                <h2 class="text-center">Contáctanos</h2>
+
             </div>
         </section>
     </main>
